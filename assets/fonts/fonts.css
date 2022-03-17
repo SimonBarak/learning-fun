@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./landing-regular.woff2") format("woff2"),
+    url("./landing-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("./landing-light.woff2") format("woff2"),
+    url("./landing-light.woff") format("woff");
+}
