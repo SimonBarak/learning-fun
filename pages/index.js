@@ -4,19 +4,37 @@ import { PhraseObjs } from "./api/hello.js";
 import React, { useRef, useState, useEffect } from "react";
 
 const PhraseBox = ({ dataObj }) => {
+  const [visible, setVisible] = useState("");
   const { text_de, audioUrl } = dataObj;
 
   const audioPlayerEl = useRef(null);
 
   const playAudio = () => {
     audioPlayerEl.current.play();
+    //audioPlayerEl.classList.add("go");
+    // audioPlayerEl.current.onended(() => {
+    //   console.log("");
+    // });
   };
 
+  useEffect(() => {
+    const newAudio = new Audio(audioUrl);
+
+    newAudio.onended = (e) => {
+      console.log("H");
+      setVisible("ml ");
+      //newAudio.classList.add("ml");
+    };
+
+    audioPlayerEl.current = newAudio;
+  }, []);
+
+  const s =
+    visible +
+    "ps sentence-box border border-gray-600 rounded p-2 w-full max-w-md mb-2";
+
   return (
-    <button
-      onClick={playAudio}
-      className="sentence-box border border-gray-600 rounded p-2 w-full max-w-md mb-2"
-    >
+    <button onClick={playAudio} className={s}>
       <div className="flex justify-end text-gray-500">
         <PlayIco className="fill-current w-4 h-4 lg:w-8 " />
       </div>
