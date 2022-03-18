@@ -30,8 +30,25 @@ export const PhraseObjs = [
     text_de: "Sie trägt schwarze Kleidung",
     audioUrl: `${url}d-33351.mp3`,
   },
+  //  Witta
+  {
+    text_de: "Die Sonne scheint und es ist warm.",
+    audioUrl: `${url}d-49658.mp3`,
+  },
+  {
+    text_de: "Du hast schöne Augen!",
+    audioUrl: `${url}d-74966.mp3`,
+  },
+  {
+    text_de: "Willst du was essen gehen?",
+    audioUrl: `${url}d-51039.mp3`,
+  },
+  {
+    text_de: "Magst du ein Kaffee trinken gehen?",
+    audioUrl: `${url}d-87525.mp3`,
+  },
+  {
+    text_de: "Was hast du am Wochenende gemacht?",
+    audioUrl: `${url}d-78463.mp3`,
+  },
 ];
-
-export default function handler(req, res) {
-  res.status(200).json({ name: "John Doe" });
-}
