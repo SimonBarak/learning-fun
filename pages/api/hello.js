@@ -11,10 +11,6 @@ export const PhraseObjs = [
     audioUrl: `${url}d-24357.mp3`,
   },
   {
-    text_de: "Ich praktiziere Yoga jeden Tag.",
-    audioUrl: `${url}d-152.mp3`,
-  },
-  {
     text_de: "Kann ich Ihnen helfen?",
     audioUrl: `${url}d-36782.mp3`,
   },

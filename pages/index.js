@@ -31,14 +31,14 @@ const PhraseBox = ({ dataObj }) => {
 
   const s =
     visible +
-    "ps sentence-box border border-gray-600 rounded p-2 w-full max-w-md mb-2";
+    "ps sentence-box border-2 border-gray-600 rounded p-2 w-full max-w-md mb-2 py-36";
 
   return (
     <button onClick={playAudio} className={s}>
-      <div className="flex justify-end text-gray-500">
+      <p className="mb-5 text-xl text-center px-2">{text_de}</p>
+      <div className="flex justify-center text-gray-500">
         <PlayIco className="fill-current w-4 h-4 lg:w-8 " />
       </div>
-      <p className="mb-5 py-36 text-center px-2">{text_de}</p>
 
       <audio src={audioUrl} ref={audioPlayerEl}></audio>
     </button>
